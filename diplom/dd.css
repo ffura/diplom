@@ -1,0 +1,86 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+
+html, body
+{
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body
+{
+  background-color: rgb(60, 54, 60);
+}
+
+.shapka
+{
+  
+}
+
+.shapka-nav
+{
+  display: flex;
+}
+
+.logotype
+{
+  height: 50px;
+  width: 200px;
+  padding-right: 600px;
+}
+
+.menu
+{
+  padding: 20px;
+}
+
+.basket
+{
+  height: 40px;
+  width: 40px;
+}
+
+.container
+{
+
+}
+
+.Main1
+{
+  display: flex;
+  gap: 20px; 
+}
+
+.Mainphoto
+{
+  width: 400px;
+  height: 500px;
+}
+
+.realfooter
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footerdiv
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerphoto
+{
+  width: 50px;
+  height: 50px;
+}
+
