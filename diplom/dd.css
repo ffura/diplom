@@ -7,59 +7,90 @@ padding: 0;
 html, body
 {
   height: 100%;
-  width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 1920px;
+  background-color: rgb(30, 30, 30);
 }
 
-body
+.nav-link
 {
-  background-color: rgb(60, 54, 60);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: .3s all ease-out;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.nav-link:hover
+{ 
+  text-decoration: none;
+  transform: scale(1.05);
+  color: white;
+}
+
+.info-link
+{
+  transform: scale(1.5);
+  text-decoration: none;
+  color:white;
 }
 
 .shapka
 {
-  
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .shapka-nav
 {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logotype
+.textshapka
 {
-  height: 50px;
-  width: 200px;
-  padding-right: 600px;
+  display: flex;
+  gap: 50px;
 }
 
-.menu
+.shop-item 
 {
-  padding: 20px;
+  position: relative;
+  width: 100%;
 }
 
-.basket
+.info
 {
-  height: 40px;
-  width: 40px;
-}
-
-.container
-{
-
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 100%;
 }
 
 .Main1
 {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px; 
 }
 
 .Mainphoto
+{ 
+  width: 590px;
+  height: 800px;
+  position: absolute;
+}
+
+.textMainphoto
 {
-  width: 400px;
-  height: 500px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .realfooter
@@ -68,6 +99,8 @@ body
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 15px;
+  background-color:rgb(15, 15, 15)
 }
 
 .footerdiv
@@ -76,6 +109,10 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footerphoto
@@ -84,3 +121,275 @@ body
   height: 50px;
 }
 
+.footertext
+{
+  color: white;
+}
+
+.shortphoto
+{
+  background-image: url("photo/штаны.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.chainphoto
+{
+  background-image: url("photo/Цепь.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.bootsphoto
+{
+  background-image: url("photo/кросы.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.footwhitephoto1
+{
+  background-image: url("photo/фб.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.footwhitephoto2
+{
+  background-image: url("photo/обратнаяфб.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.footblackphoto1
+{
+  background-image: url("photo/фч.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.footblackphoto2
+{
+  background-image: url("photo/обратнаяфч.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.hoodwhitephoto1
+{
+  background-image: url("photo/хб.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.hoodwhitephoto2
+{
+  background-image: url("photo/осххб.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.hoodblackphoto1
+{
+  background-image: url("photo/хч.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.hoodblackphoto2
+{
+  background-image: url("photo/осххч.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px;
+  transition: .3s;
+}
+
+.oknocontacks
+{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(30, 30, 30, .9);
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  padding-right: 10px;
+  position: fixed;
+  display: none;
+  border: 3px solid red;
+  font-size: larger;
+}
+
+.oknodostavka
+{
+  color: white;
+  height: 300px;
+  width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(30, 30, 30, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: larger;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  z-index: -1;
+  display: none;
+}
+
+.textokno
+{
+  padding: 20px;
+  font-size: large;
+}
+
+.dostavkaoform
+{
+  border: 2px solid red;
+  margin-top: 10px;
+}
+
+.shop
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(30, 30, 30, .9);
+  color: white;
+  height: 580px;
+  width: 400px;
+  z-index: -1;
+  display: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  border: 3px solid red
+}
+
+.items
+{
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.oznok
+{ 
+  color: white;
+  padding-bottom: 5px;
+  font-size: larger;
+}
+
+.sell
+{
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.textdostavka
+{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  border-radius: 5px;
+  height: 20px;
+  width: 217px;
+}
+
+.color
+{
+  color:black;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+}
+
+.textdostavkaB
+{
+  font-size: large;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.text
+{
+  color: red;
+}
+
+.close
+{
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 0;
+  font-size: 1.3rem;
+}
